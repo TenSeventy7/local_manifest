@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ <!-- Common Device Tree repos -->
+ <project path="device/samsung/a50-common" name="Galaxya50/android_device_samsung_a50-common.git" remote="github" revision="android-12.0" />
+ <project path="kernel/samsung/a50-common" name="Galaxya50/android_kernel_samsung_a50-common.git" remote="github" revision="android-12.0" />
+ <project path="vendor/samsung/a50-common" name="Galaxya50/android_vendor_samsung_a50-common.git" remote="github" revision="android-12.0" />
+ <project path="hardware/samsung" name="Galaxya50/android_hardware_samsung.git" remote="github" revision="android-12.0" />
+ 
+ <!-- We'll only build for the non-NFC variants for now -->
+ <project path="device/samsung/a505f" name="Galaxya50/android_device_samsung_a505f.git" remote="github" revision="android-12.0" />
+ <project path="vendor/samsung/a505f" name="Galaxya50/android_vendor_samsung_a505f.git" remote="github" revision="android-12.0" />
+
+ <!-- Dependencies -->
+ <project path="device/samsung_slsi/sepolicy" name="LineageOS/android_device_samsung_slsi_sepolicy.git" remote="github" revision="lineage-19.0" />
+ <project path="hardware/samsung/nfc" name="LineageOS/android_hardware_samsung_nfc.git" remote="github" revision="lineage-18.1" />
+ <project path="hardware/samsung_slsi/libbt" name="LineageOS/android_hardware_samsung_slsi_libbt.git" remote="github" revision="lineage-19.0" />
+ <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wifi_hal.git" remote="github" revision="lineage-19.0" />
+ <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib.git" remote="github" revision="lineage-19.0" />
+</manifest>
